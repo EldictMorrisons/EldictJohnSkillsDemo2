@@ -1,0 +1,265 @@
+/*Author: Eldict Koonan John 
+	Date: 12/03/2024
+	Class: CD
+
+	This website is part of an assignment. The scenario is that a Hair Saloon is trying to promote business.  
+	The links on the homepage are About Us, our services, out staff, testimonails and contact us.*/
+body {
+	font-size: 75%;
+	font-family: Bookman Old Style, sans-serif;
+	letter-spacing: 0.15em;	}
+
+h2, h3, p, label, th, td, tr, legend, button{
+	color: #333333;
+}
+
+#page {
+	max-width: 940px;
+	min-width: 720px;
+	margin: 5px auto;
+	padding: 20px;
+	border: 4px double #F1F0E8;
+	background-color: #d5e6ee;
+	box-shadow: 0 0 20px 5px #96B6C5;
+}
+
+#logo {
+	width: 550px;
+	/* height: 10px; */
+	padding-left: 80px;
+	float: center;
+	}
+
+.NavBar{
+	border-radius: 13px;
+	background: linear-gradient(45deg, #7ecdd8, #6aadb6);
+	box-shadow:  8px -8px 12px #5b949c,
+             	-4px 4px 6px #91ecf8;
+	padding: 2px;
+	margin-bottom:40px;
+}
+
+ul {
+	width: 750px;
+	padding: 8px;
+	margin: 2 auto;
+	text-align: center;}
+
+li {
+	display: inline;
+	margin: 0 auto;}
+
+.numbered-list {
+	color: white;
+	counter-reset: item
+}
+
+.numbered-list{
+	list-style: decimal;
+}
+
+.numbered-list li {
+	display: list-item;
+	text-align: left;
+}
+	
+#navigation a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 6px 14px 5px 14px;}
+
+#navigation a:hover, #navigation a.on {
+	color: #cc3333;
+	background-color: #ffffff;}
+
+#content {
+	width: 600px;
+	margin: 0 auto;}
+
+figure {
+	padding-top: 10px;
+	width: 600px;
+	margin: 0 auto;}
+	
+/* Additional styles for the forms */
+label {
+	float: left;
+	width: 70px;}
+br {
+	clear: left;}	
+form {
+	padding: 20px 0 20px 0;
+	width: 650px;
+	margin: 0 auto;}
+legend {
+	font-weight: bold;}
+	
+/* Additional styles for the tables */
+table { 
+font-size: 100%;
+	font-family: Arial, sans-serif;
+	letter-spacing: 0.15em;	
+	border-collapse: collapse;
+	margin: 0 auto;}
+	
+table, th, td {
+	border: 1px solid #ffffff;}
+td {
+	padding: 10px;
+}
+
+#gallery td {
+	text-align: center;
+}
+table img{
+	width: 100%;
+
+}
+.borderImage img{
+	border-radius: 20px;
+}
+
+.MainImage{
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px rgba(0.2, 0.2, 0.2, 0.2);
+	margin-bottom: 20px;
+}
+
+#background-video {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: -1;
+  }
+
+.AboutUsMain{
+	display: flex;
+	margin: 10px;
+	border-width: 10px;
+	padding: 2px;
+}
+
+.AboutUsSub{
+	margin: 4px;
+	border-radius: 5px;
+	border: 2px solid #5b949c;
+	padding: 8px;
+}
+
+.AboutUsSub:hover{
+	background-color: #74aac7;
+}
+
+.OurServicesMain{
+	width: 700px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.OurServices {
+	display: flex;
+	justify-content: flex-start;
+	font-size: 8px;
+	height: 79px;
+	width: 150px;
+	margin: 2px;
+	border-radius: 10px;
+	border: 2px solid #5b949c;
+	padding: 30px;
+	position: relative; /* Add relative positioning */
+  	overflow: hidden; /* Hide overflowing content */
+  	transition: transform 0.3s;
+	}
+
+.OurServices:hover {
+	transform: translateY(-10px); /* Move the div up on hover */
+}
+
+.OurServices:hover ~ .OurServices {
+	filter: blur(5px); /* Adjust blur strength as needed */
+  }
+
+.OurServices h2 {
+	color: white;
+	display: flex;
+}
+
+.TrendyWomen{
+	background: url(./ImagesAndVideos/trendy.jpeg);
+	background-size: 180px;
+	align-items: center; 
+}
+
+.ClassicWomen{
+	background: url(./ImagesAndVideos/classicHairCut.jpg);
+	background-size: 180px;
+	align-items: center; 
+}
+
+.WomenHairColour{
+	background: url(./ImagesAndVideos/hairColour.jpg);
+	background-size: 200px;
+	align-items: center; 
+}
+
+.TrendyMen{
+	background: url(./ImagesAndVideos/menTrendy.jpg);
+	/* width: 140px; */
+	background-size: 200px;
+	align-items: center; 
+}
+
+.ClassicMen{
+	background: url(./ImagesAndVideos/van-gogh-portrait.jpg	);
+	background-size: 240px;}
+
+.BeardMen{
+	background: url(./ImagesAndVideos/beard.jpg);
+	background-size: 180px;}
+
+.grouping{
+	display: flex;
+	border: 1px solid white;
+	border-radius: 4px;	
+	padding: 4px;
+}
+
+.href{
+	color: #808443;
+}
+
+.Testimonials{
+	display: flex;	
+	flex-direction: column;
+}
+
+.Testimonials p{
+	border: 2px solid #5b949c;
+	border-radius: 10px;
+	padding: 9px;
+	margin: 4px;
+	/* width: 200px; */
+	/* height: 400px; */
+}
+
+.Testimonials p:hover{
+	transform: scale(1.1,1.1);
+}
+
+.OurStaffConvos{
+	display: flex;
+	flex-direction:row;
+}
+
+.OurStaffConvos p{
+	border: 2px solid #5b949c;
+	border-radius: 10px;
+	padding: 7px;
+	margin: 4px;
+}
